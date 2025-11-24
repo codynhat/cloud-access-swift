@@ -16,7 +16,7 @@ let package = Package(
         .iOS(.v14)
     ],
     products: [
-        .library(name: "CryptomatorCloudAccessCore", targets: ["CryptomatorCloudAccessCore"])
+        .library(name: "CryptomatorCloudAccess", targets: ["CryptomatorCloudAccess"])
     ],
     dependencies: [
         .package(
@@ -27,11 +27,11 @@ let package = Package(
             .upToNextMinor(from: "3.8.0")),
         .package(url: "https://github.com/groue/GRDB.swift.git", .upToNextMinor(from: "6.29.1")),
         .package(url: "https://github.com/tobihagemann/JOSESwift.git", exact: "2.4.1-cryptomator"),
-        .package(url: "https://github.com/google/promises", .upToNextMajor(from: "2.3.1")),
+        .package(url: "https://github.com/google/promises.git", exact: "2.3.1"),
     ],
     targets: [
         .target(
-            name: "CryptomatorCloudAccessCore",
+            name: "CryptomatorCloudAccess",
             dependencies: [
                 .product(name: "CocoaLumberjackSwift", package: "CocoaLumberjack"),
                 .product(name: "CryptomatorCryptoLib", package: "cryptolib-swift"),
