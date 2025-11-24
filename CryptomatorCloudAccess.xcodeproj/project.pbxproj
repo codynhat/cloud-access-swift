@@ -23,9 +23,6 @@
 		4A4074A0252F432900D583C3 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40749F252F432900D583C3 /* URLProtocolMock.swift */; };
 		4A41D2432641938A00B5D787 /* VaultFormat6MicrosoftGraphIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41D2422641938A00B5D787 /* VaultFormat6MicrosoftGraphIntegrationTests.swift */; };
 		4A41D2492641960B00B5D787 /* VaultFormat7MicrosoftGraphIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41D2482641960B00B5D787 /* VaultFormat7MicrosoftGraphIntegrationTests.swift */; };
-		4A567B1A2615C917002C4D82 /* GTMAppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4A567B192615C917002C4D82 /* GTMAppAuth */; };
-		4A567B372615CAAC002C4D82 /* GTMSessionFetcher in Frameworks */ = {isa = PBXBuildFile; productRef = 4A567B362615CAAC002C4D82 /* GTMSessionFetcher */; };
-		4A567B3C2615CB00002C4D82 /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4A567B3B2615CB00002C4D82 /* AppAuth */; };
 		4A567B402615CD7D002C4D82 /* CloudPath+DatabaseValueConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A567B3F2615CD7D002C4D82 /* CloudPath+DatabaseValueConvertible.swift */; };
 		4A628EB8252F610C0097DE94 /* URLSession+Promises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A628EB7252F610C0097DE94 /* URLSession+Promises.swift */; };
 		4A6D2CD62643EE83006C5574 /* VaultProviderFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D2CD52643EE83006C5574 /* VaultProviderFactoryTests.swift */; };
@@ -309,10 +306,7 @@
 				74F9355D251F67A3001F4ADA /* CryptomatorCryptoLib in Frameworks */,
 				74F93562251F6822001F4ADA /* GRDB in Frameworks */,
 				740C5879262F800A00F63423 /* JOSESwift in Frameworks */,
-				4A567B3C2615CB00002C4D82 /* AppAuth in Frameworks */,
 				74F93567251F6863001F4ADA /* Promises in Frameworks */,
-				4A567B372615CAAC002C4D82 /* GTMSessionFetcher in Frameworks */,
-				4A567B1A2615C917002C4D82 /* GTMAppAuth in Frameworks */,
 				4A8B872F287D7E77002D676E /* CocoaLumberjackSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -854,9 +848,6 @@
 				74F9355C251F67A3001F4ADA /* CryptomatorCryptoLib */,
 				74F93561251F6822001F4ADA /* GRDB */,
 				74F93566251F6863001F4ADA /* Promises */,
-				4A567B192615C917002C4D82 /* GTMAppAuth */,
-				4A567B362615CAAC002C4D82 /* GTMSessionFetcher */,
-				4A567B3B2615CB00002C4D82 /* AppAuth */,
 				740C5878262F800A00F63423 /* JOSESwift */,
 				4A8B872E287D7E77002D676E /* CocoaLumberjackSwift */,
 			);
@@ -937,9 +928,6 @@
 				74F9355B251F67A3001F4ADA /* XCRemoteSwiftPackageReference "cryptolib-swift" */,
 				74F93560251F6822001F4ADA /* XCRemoteSwiftPackageReference "GRDB.swift" */,
 				74F93565251F6863001F4ADA /* XCRemoteSwiftPackageReference "promises" */,
-				4A567B182615C917002C4D82 /* XCRemoteSwiftPackageReference "GTMAppAuth" */,
-				4A567B352615CAAC002C4D82 /* XCRemoteSwiftPackageReference "gtm-session-fetcher" */,
-				4A567B3A2615CB00002C4D82 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */,
 				740C5877262F800A00F63423 /* XCRemoteSwiftPackageReference "JOSESwift" */,
 				4A8B872D287D7E77002D676E /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
 			);
@@ -1501,30 +1489,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4A567B182615C917002C4D82 /* XCRemoteSwiftPackageReference "GTMAppAuth" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/GTMAppAuth.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 4.1.0;
-			};
-		};
-		4A567B352615CAAC002C4D82 /* XCRemoteSwiftPackageReference "gtm-session-fetcher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/gtm-session-fetcher.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 3.5.0;
-			};
-		};
-		4A567B3A2615CB00002C4D82 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/openid/AppAuth-iOS.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.7.0;
-			};
-		};
 		4A8B872D287D7E77002D676E /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack.git";
@@ -1568,21 +1532,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4A567B192615C917002C4D82 /* GTMAppAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4A567B182615C917002C4D82 /* XCRemoteSwiftPackageReference "GTMAppAuth" */;
-			productName = GTMAppAuth;
-		};
-		4A567B362615CAAC002C4D82 /* GTMSessionFetcher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4A567B352615CAAC002C4D82 /* XCRemoteSwiftPackageReference "gtm-session-fetcher" */;
-			productName = GTMSessionFetcher;
-		};
-		4A567B3B2615CB00002C4D82 /* AppAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4A567B3A2615CB00002C4D82 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
-			productName = AppAuth;
-		};
 		4A8B872E287D7E77002D676E /* CocoaLumberjackSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4A8B872D287D7E77002D676E /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
